@@ -82,10 +82,20 @@ body{
     color:#fff;
     font-weight: 600;
     background-color: #015601;
-    border: 1.5px solid #000;
-    border-radius: 2px;
+    border: 0.5px solid #fff;
+    outline: 3px solid #015601;
+    border-radius: 5px;
     font-size: 1.3rem;
+    transition: .5s ease;
 
+}
+
+.want a{
+    text-decoration: none;
+}
+
+.call:hover{
+    transform: scale(1.05);
 }
 
 .heroImgBox{
@@ -134,7 +144,7 @@ body{
     padding: 0.5px 0;
     border: 5px solid black !important;
     outline: 0.5px solid #a6a6a6 !important;
-    box-shadow: 2px 2px 3px 5px #000;
+    box-shadow: 0 3px 6px #000;
     border-radius: 10px;
     overflow: scroll;
     overflow-x: hidden;
@@ -169,20 +179,21 @@ body{
     justify-content: center;
 }
 
-.price div{
+.price .priceBox{
     width: 95%;
     height: auto;
     border: 2px solid black;
     padding: 15px;
     margin: 10px;
-    text-align: left;
-    line-height: 2.5rem;
+    text-align: justify;
+    line-height: 2rem;
     background-color: #181818;
     color: #fff;
     border-radius: 35px;
-    box-shadow: 2px 2px 5px 2px #00b600;
+    box-shadow: 0 5px 8px #00b600;
     font-size: 1.15rem;
 }
+
 
 
 .tt{
@@ -193,38 +204,42 @@ body{
 }
 
 .inn, .notinn{
-    background-color:#015601;
+    background-color:#1e3e1e;
     padding: 0 5px;
     font-weight: 500;
     border-radius: 10px;
 }
 
 .inni, .notInni{
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0;
 }
 
-.inni li::before{
+/* .inni p::before{
     content: "> ";
     color: #52ff52;
-}
+} */
 
 .notinn{
-    background-color: rgb(104, 2, 2);
+    background-color: #4e2424;
 }
 
-.notInni li::before{
+/* .notInni p::before{
     content: "x ";
     color: red;
-}
+} */
 
 .add{
     color: #00c400;
-    font-weight: 500;
-    border: 0.5px dotted #fff;
-    padding: 0 5px;
-    border-radius: 10px;
+    text-align: center;
+    border: 0.1px dotted #707070;
+    /* padding: 0 5px; */
+    border-radius: 5px;
 
+}
+
+.want{
+   text-align: center;
 }
 
 
@@ -313,4 +328,30 @@ legend{
 
 
 
+/* tablet breakpoint */
+@media (min-width: 768px){
+    /* price box */
+    .price .priceBox{
+        width: 45%;
+}
 
+}
+
+
+/* laptops  breakpoint*/
+@media (min-width: 1024px){
+    /* price box */
+    .price .priceBox{
+        width: 30%;
+}
+
+}
+
+
+/* desktop breakpoint */
+@media (min-width: 1440px){
+    /* price box */
+    .price .priceBox{
+        width: 30%;
+}
+}
