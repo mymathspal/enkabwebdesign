@@ -62,18 +62,56 @@ body{
 
 .heroSection{
     display: flex;
-    flex-direction: row;
-    /* margin-top: 200px; */
-    /* width: 100vw; */
-    padding-top: 7rem;
+    flex-direction: column;
+    padding-top: 5rem;
     width: 100%;
-    /* height: 100vh; */
 }
 
 .heroText{
-    /* width: 65vw; */
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    line-height: 200%;
+    color: #3d3d3d;
+    /* height: auto; */
+    
+}
+
+.context{
+    line-height: 100%;
+    font-weight: 500;
+    color: #555555;
+}
+
+
+.heroImgBox{
+    width: 80%;
+    height: auto;
+}
+
+.build{
+    background-color:#015601;
+    color: #fff;
+    padding: 0 5px;
+}
+
+/* .heroSection{
+    display: flex;
+    flex-direction: row;
+    padding-top: 7rem;
+    width: 100%;
+}
+
+.heroText{
     width: 55%;
 }
+
+.heroImgBox{
+    width: 45%;
+    height: auto;
+} */
+
 
 .call{
     width: 70%;
@@ -98,11 +136,7 @@ body{
     transform: scale(1.01);
 }
 
-.heroImgBox{
-    /* width: 45vw; */
-    width: 45%;
-    height: auto;
-}
+
 
 .sectionContent{
     display: flex;
@@ -155,6 +189,17 @@ body{
 .gg{
     width: 22rem;
     height: initial;
+}
+
+.sectionHead{
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+.sectionHead + p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555555;
 }
 
 /* 
@@ -326,6 +371,28 @@ legend{
     padding: 0 15px;
 }
 
+
+
+
+
+/* this is for any screen other than phones */
+
+@media (min-width: 768px){
+.heroSection{
+    flex-direction: row;
+    padding-top: 7rem;
+    width: 100%;
+}
+
+.heroText{
+    width: 55%;
+}
+
+.heroImgBox{
+    width: 45%;
+    height: auto;
+}
+}
 
 
 /* tablet breakpoint */
