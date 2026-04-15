@@ -1,28 +1,17 @@
 *{
 box-sizing: border-box;
 scroll-behavior: smooth;
-/* overflow-x: hidden; */
 }
 
 body{
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    /* text-align: center; */
-    /* width: 100vw; */
-    /* width: 100%; */
-
-}
+  }
 
 .body{
     text-align: center;
 }
-
- /* #pricing{
-    padding: 100px;
-} */
-
 
 .navBar{
     display: flex;
@@ -30,8 +19,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    /* width: 100vw; */
-    /* padding: 1.5rem; */
     width: 100%;
     height: 6.5rem;
     background-color: #000;
@@ -45,7 +32,6 @@ body{
     width: auto;
     height: auto;
 }
-
 
 .headLinksBox span a{
     text-decoration: none;
@@ -63,35 +49,41 @@ body{
     padding: 0 25px;
 }
 
-
 .heroSection{
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 4rem;
     width: 100%;
+    background-color: #000;
 }
 
 .heroText{
-    width: 90%;
-    margin: 0 auto;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
     letter-spacing: -2px;
     line-height: 200%;
-    color: #3d3d3d;
-    text-align: left;
-    /* height: auto; */
-    
+    text-align: center;
+    color: #fff;
+    padding: 0 3px;    
 }
 
 .context{
     line-height: 100%;
     font-weight: 500;
-    color: #555555;
+    color: #c5c5c5;
 }
 
 
 .heroImgBox{
-    width: 80%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* padding-top: 3rem; */
+    /* justify-content: center; */
+}
+
+.heroImgBox img{
+    width: 100%;
     height: auto;
 }
 
@@ -101,23 +93,6 @@ body{
     padding: 0 5px;
     font-size: 1.8rem;
 }
-
-/* .heroSection{
-    display: flex;
-    flex-direction: row;
-    padding-top: 7rem;
-    width: 100%;
-}
-
-.heroText{
-    width: 55%;
-}
-
-.heroImgBox{
-    width: 45%;
-    height: auto;
-} */
-
 
 .call{
     width: 70%;
@@ -131,7 +106,6 @@ body{
     border-radius: 5px;
     font-size: 1.3rem;
     transition: .5s ease;
-
 }
 
 .want a{
@@ -141,8 +115,6 @@ body{
 .call:hover{
     transform: scale(1.01);
 }
-
-
 
 .sectionContent{
     display: flex;
@@ -189,7 +161,6 @@ body{
     overflow: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
-
 }
 
 .gg{
@@ -205,21 +176,13 @@ body{
 .sectionHead + p{
     font-size: 1.2rem;
     font-weight: 500;
-    color: #555555;
+    color: #272727;
 }
-
-/* 
-.hhh{
-    color: green;
-    text-align: right;
-    padding: 10px;
-} */
 
 .pricingSection{
     border: 2px solid black;
     width: 100%;
     background-color: #c1c3c1;
-  /* margin-bottom: 100px; */
 }
 
 .price{
@@ -245,8 +208,6 @@ body{
     font-size: 1.15rem;
 }
 
-
-
 .tt{
     font-size: 1.8rem;
     color: #00c400;
@@ -262,37 +223,23 @@ body{
 }
 
 .inni, .notInni{
-    /* list-style-type: none; */
     padding: 0;
 }
-
-/* .inni p::before{
-    content: "> ";
-    color: #52ff52;
-} */
 
 .notinn{
     background-color: #4e2424;
 }
 
-/* .notInni p::before{
-    content: "x ";
-    color: red;
-} */
-
 .add{
     color: #00c400;
     text-align: center;
     border: 0.1px dotted #707070;
-    /* padding: 0 5px; */
     border-radius: 5px;
-
 }
 
 .want{
    text-align: center;
 }
-
 
 .moreEnquiryTxt{
     display: flex;
@@ -300,19 +247,15 @@ body{
     background-color: #015601;
     padding: 30px;
     color: #fff;
-    
 }
 
 
 .enquirySection{
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     flex-direction: row;
     margin: 15px;
     flex-wrap: wrap;
-    
-
 }
 
 legend{
@@ -349,13 +292,10 @@ legend{
     border-radius: 5px;
 }
 
-
 .socialIcon{
    width: 1.5rem;
    height: 1.5rem;
 }
-
-
 
 .footer{
    display: flex;
@@ -378,17 +318,14 @@ legend{
 }
 
 
-
-
-
 /* this is for any screen other than phones */
 
 @media (min-width: 768px){
 .heroSection{
     flex-direction: row;
-    padding: 15px;
     padding-top: 4rem;
     width: 100%;
+    /* height: 80vh; */
 }
 
 .heroText{
@@ -397,8 +334,11 @@ legend{
 
 .heroImgBox{
     width: 45%;
-    height: auto;
+    padding-top: 1.5rem;
+    align-content: center;
+    /* height: 80vh; */
 }
+
 }
 
 
@@ -420,7 +360,6 @@ legend{
 }
 
 }
-
 
 /* desktop breakpoint */
 @media (min-width: 1440px){
