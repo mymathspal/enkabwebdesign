@@ -136,6 +136,15 @@ body{
     height: auto;
 }
 
+.sectionContent h3{
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.sectionContent p{
+    font-size: 1.1rem;
+}
+
 .callR{
   display: flex;
   justify-content: center;
@@ -338,6 +347,11 @@ legend{
     align-content: center;
     /* height: 80vh; */
 }
+
+.call{
+    width: 55%;
+}
+
 
 }
 
