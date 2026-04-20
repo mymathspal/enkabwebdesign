@@ -121,20 +121,23 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
-    background-color: #c1c3c1;
+    flex-wrap: wrap;
+    /* background-color: #c1c3c1; */
 }
 
 .sectionContent img{
     border: 2px solid #000;
-    width: 30vw;
+    width: 45%;
     height: auto;
+    object-fit: cover;
 }
 
  .sectionContent span{
     border: 2px solid green;
-    width: 65vw;
+    width: 55%;
     height: auto;
 }
+
 
 .sectionContent h3{
     font-size: 1.5rem;
@@ -188,6 +191,45 @@ body{
     color: #272727;
 }
 
+/* .processSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.processSection .sectionContent{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+} */
+
+.processContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.processBox img{
+    width: 6rem;
+    height: 6rem;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.processBox{
+    display: block;
+    width: 80%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #000;
+
+}
+
+
 .pricingSection{
     border: 2px solid black;
     width: 100%;
@@ -210,7 +252,8 @@ body{
     margin: 10px;
     text-align: justify;
     line-height: 2rem;
-    background-color: #181818;
+    /* background-color: #181818; */
+    background-color: #000;
     color: #fff;
     border-radius: 35px;
     box-shadow: 0 5px 8px #00b600;
@@ -352,6 +395,16 @@ legend{
     width: 55%;
 }
 
+.processContainer{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.processBox{
+    width: 30%;
+}
 
 }
 
