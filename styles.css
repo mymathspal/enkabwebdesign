@@ -119,23 +119,27 @@ body{
 .sectionContent{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
+    padding: 20px;
     flex-wrap: wrap;
-    /* background-color: #c1c3c1; */
 }
 
+
+
 .sectionContent img{
-    border: 2px solid #000;
     width: 45%;
     height: auto;
     object-fit: cover;
 }
 
- .sectionContent span{
+ .sectionContent .abt{
     border: 2px solid green;
     width: 55%;
     height: auto;
+    padding: 10px;
+}
+
+.sectionContent:last-child{
+    justify-content: center;
 }
 
 
@@ -191,19 +195,6 @@ body{
     color: #272727;
 }
 
-/* .processSection{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.processSection .sectionContent{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    
-} */
-
 .processContainer{
     display: flex;
     flex-direction: row;
@@ -231,9 +222,9 @@ body{
 
 
 .pricingSection{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
-    background-color: #c1c3c1;
+    /* background-color: #c1c3c1; */
 }
 
 .price{
@@ -394,6 +385,27 @@ legend{
 .call{
     width: 55%;
 }
+
+.whatWeDoBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.whatWeDoBox div:nth-child(-n+4){
+    width: 45%;
+}
+
+.whatWeDoBox div:last-child{
+   justify-content: center;
+}
+
+.whatWeDoBox .sectionContent p{
+    padding: 20px;
+}
+
 
 .processContainer{
     flex-direction: row;
