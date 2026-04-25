@@ -33,7 +33,7 @@
             <div class="heroText">
                 <h1><span class="build">We Build</span><br> Websites For Home & Commercial Service Businesses</h1>
                 <p class="context">Optimise for local visibilty, trust & credibilty with your new shiny website</p>
-                <button class="call">BOOK A CALL</button>
+                <button class="call" onclick="bookCall(event)">BOOK A CALL</button>
             </div>
             <div class="heroImgBox">
                 <img src="heroImage-1.webp" alt="" srcset="" fetchpriority="high" width="414px" height="226px">
@@ -79,7 +79,7 @@
         </div>
 
         <div class="callR">
-        <button class="call">BOOK A CALL</button>
+        <button class="call" onclick="bookCall(event)">BOOK A CALL</button>
         </div>
     </div>
 
@@ -89,6 +89,9 @@
         <p>See your business soar higher in the midst of competition</p>
 
         <div class="one">
+            <div class="sectionContent11">
+                <img src="" alt="" class="gg">
+            </div>
             <div class="sectionContent11">
                 <img src="" alt="" class="gg">
             </div>
@@ -125,7 +128,7 @@
         </div>
 
         <div class="callR">
-        <button class="call">BOOK A CALL</button>
+        <button class="call" onclick="bookCall(event)">BOOK A CALL</button>
         </div>
 
     </div>
@@ -186,7 +189,7 @@
             </div>
 
     
-            <div class="want"><button type="submit" class="call">I want this!</button></div>
+            <div class="want"><button type="submit" class="call" onclick="selectPrice(event)" >I want this!</button></div>
         </div>
 
         <div class="priceBox"> 
@@ -211,7 +214,7 @@
 
          
 
-            <div class="want"><button type="submit" class="call">I want this!</button></div>
+            <div class="want"><button type="submit" class="call" onclick="selectPrice(event)">I want this!</button></div>
 
         </div>
 
@@ -242,7 +245,7 @@
     </div>
 
     <div class="callR">
-        <button class="call">BOOK A CALL</button>
+        <button class="call" onclick="bookCall(event)">BOOK A CALL</button>
     </div>
 
     <div id="contact">
@@ -276,7 +279,7 @@
                     <textarea name="message" id="message" cols="41" rows="5"></textarea>
                 </label>
                 
-                <div><button type="submit" class="formSubmit">SUBMIT</button></div>
+                <div><button type="submit" class="formSubmit" onclick="submitContactForm()">SUBMIT</button></div>
 
             </form>
         </div>
@@ -284,6 +287,7 @@
 
     </div>
 
+    <script src="scripts.js" defer></script>
 
     <!-- <div class="moreInfoSection" >
 
