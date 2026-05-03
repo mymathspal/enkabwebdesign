@@ -33,6 +33,10 @@ body{
     height: auto;
 }
 
+.even{
+    background-color: #c8c8c8;
+}
+
 .headLinksBox span a{
     text-decoration: none;
     font-size: 1.2rem;
@@ -85,6 +89,62 @@ body{
 .heroImgBox img{
     width: 100%;
     height: auto;
+}
+
+.bookForm{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 500;
+    /* border: 2px solid #000; */
+    padding: 20px;
+}
+
+.bookForm label {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.bookForm input{
+    padding: 5px;
+    font-size: 1.12rem;
+    font-weight: 400;
+    align-items: flex-start;
+
+    /* padding: 10px;
+    margin: 10px; */
+    /* border: 2px solid red; */
+}
+
+.bookCallModal{
+    border: none;
+    width: 80%;
+}
+
+.bookCallModal::backdrop{
+    backdrop-filter: blur(3px);
+}
+
+.closeBtnBox{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeFormBtn{
+    background-color: #fff;
+    font-size: 1.6rem;
+    border: none;
+}
+
+.bookBtn{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #015601;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+
 }
 
 .build{
@@ -216,6 +276,7 @@ body{
     width: 80%;
     padding: 20px;
     margin: 10px;
+    /* background-color: #cacaca; */
     border-radius: 10px;
     box-shadow: 0 5px 10px #000;
 
@@ -302,11 +363,7 @@ body{
     flex-wrap: wrap;
 }
 
-legend{
-    text-align: left;
-    padding: 8px;
-    font-weight: 600;
-}
+
 
 .enquirySection label input, .formSubmit{
     width: 20rem;
@@ -315,6 +372,23 @@ legend{
     /* border: none; */
     padding: 0 15px;
 }
+
+.reason{
+   text-align: left;
+   line-height: 30px;
+   font-weight: 400;
+}
+
+input[type="radio"]{
+    accent-color: green;    
+}
+
+legend{
+    text-align: left;
+    padding: 8px;
+    font-weight: 600;
+}
+
 
 .formSubmit{
     background-color:#015601;
@@ -348,7 +422,8 @@ legend{
    justify-content: space-around;
    align-content: center;
    flex-wrap: wrap;
-    background-color: #202020;
+    /* background-color: #202020; */
+    background-color: #000;
     color: #00b600;
     width: 100%;
     height: auto;
@@ -417,6 +492,10 @@ legend{
 
 .processBox{
     width: 30%;
+}
+
+.bookCallModal{
+    width: 60%;
 }
 
 }
